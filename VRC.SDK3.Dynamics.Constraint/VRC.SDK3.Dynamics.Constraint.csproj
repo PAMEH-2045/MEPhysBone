@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>VRC.SDK3.Dynamics.Constraint</AssemblyName>
+    <RootNamespace>VRC.SDK3.Dynamics.Constraint</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\UnityEngine.CoreModule.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\VRCAimConstraint.cs" />
+    <Compile Include="Components\VRCLookAtConstraint.cs" />
+    <Compile Include="Components\VRCParentConstraint.cs" />
+    <Compile Include="Components\VRCPositionConstraint.cs" />
+    <Compile Include="Components\VRCRotationConstraint.cs" />
+    <Compile Include="Components\VRCScaleConstraint.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\**\*.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VRC.Dynamics\VRC.Dynamics.csproj">
+      <Project>{97346bf5-d52b-4bb5-8fdb-88479bed288b}</Project>
+      <Name>VRC.Dynamics</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

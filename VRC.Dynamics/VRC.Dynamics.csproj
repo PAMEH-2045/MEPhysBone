@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+	<TargetFramework>netstandard2.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>VRC.Dynamics</AssemblyName>
+    <RootNamespace>VRC.Dynamics</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="G:\TEMP\com.vrchat.base-3.9.0\Runtime\VRCSDK\Dependencies\Managed\System.Collections.Immutable.dll" />
+    <Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\Unity.Burst.dll" />
+    <Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\Unity.Mathematics.dll" />
+    <Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\Unity.Collections.dll" />
+	<Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\UnityEngine.AnimationModule.dll" />
+    <Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\UnityEngine.CoreModule.dll" />
+	<Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\UniTask.dll" />
+	<Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\UnityEngine.AudioModule.dll" />
+	<Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\UnityEngine.ClothModule.dll" />
+	<Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\UnityEngine.ParticleSystemModule.dll" />
+  </ItemGroup>
+</Project>
+
