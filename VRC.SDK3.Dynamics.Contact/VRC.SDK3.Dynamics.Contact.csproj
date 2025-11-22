@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-	<Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\UnityEngine.CoreModule.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Components\VRCContactReceiver.cs" />
     <Compile Include="Components\VRCContactSender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -46,5 +43,10 @@
       <Project>{97346bf5-d52b-4bb5-8fdb-88479bed288b}</Project>
       <Name>VRC.Dynamics</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\Dependences\unity_2022.3.22f1_build\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

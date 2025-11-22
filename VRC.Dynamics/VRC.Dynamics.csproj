@@ -33,16 +33,36 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-	<Reference Include="G:\TEMP\com.vrchat.base-3.9.0\Runtime\VRCSDK\Dependencies\Managed\System.Collections.Immutable.dll" />
-    <Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\Unity.Burst.dll" />
-    <Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\Unity.Mathematics.dll" />
-    <Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\Unity.Collections.dll" />
-	<Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\UnityEngine.AnimationModule.dll" />
-    <Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\UnityEngine.CoreModule.dll" />
-	<Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\UniTask.dll" />
-	<Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\UnityEngine.AudioModule.dll" />
-	<Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\UnityEngine.ClothModule.dll" />
-	<Reference Include="G:\__Projects\Unity\builds\2022_test_vrc\test-vrc_Data\Managed\UnityEngine.ParticleSystemModule.dll" />
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\Dependences\com.vrchat.base-3.9.0\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>..\Dependences\unity_2022.3.22f1_build\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>..\Dependences\unity_2022.3.22f1_build\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>..\Dependences\unity_2022.3.22f1_build\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\Dependences\unity_2022.3.22f1_build\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\Dependences\unity_2022.3.22f1_build\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\Dependences\unity_2022.3.22f1_build\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>..\Dependences\unity_2022.3.22f1_build\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\Dependences\unity_2022.3.22f1_build\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\Dependences\unity_2022.3.22f1_build\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>
 
