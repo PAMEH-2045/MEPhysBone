@@ -11,17 +11,17 @@ public static class SetupSceneForBuild
     {
         if (Application.isBatchMode)
         {
-            AddScenesToBuild();
+            AddSceneToBuild();
         }
     }
 
     [MenuItem("Build/Setup Scene For Build")]
-    public static void AddScenesToBuild()
+    public static void AddSceneToBuild()
     {
         string ScenePath = Directory.GetFiles("Assets/MATE ENGINE - Scenes", "*.unity", SearchOption.AllDirectories)
-            .FirstOrDefault(p => Path.GetFileName(p).ToLower().Contains("main"));
+            .First(p => Path.GetFileName(p).ToLower().Contains("main"));
 
-        if (!System.IO.File.Exists(ScenePath))
+        if (!File.Exists(ScenePath))
         {
             Debug.LogError($"Scene not found at path: {ScenePath}");
             return;
@@ -34,6 +34,7 @@ public static class SetupSceneForBuild
         go.AddComponent(typeof(VRC.SDK3.Dynamics.PhysBone.Components.VRCPhysBone));
         go.AddComponent(typeof(VRC.SDK3.Dynamics.Constraint.Components.VRCRotationConstraint));
         go.AddComponent(typeof(VRC.SDK3.Dynamics.Contact.Components.VRCContactReceiver));
+        go.AddComponent(typeof(VRC.SDK3.Dynamics.PhysBone.PhysBoneGrabHelper));
 
         EditorSceneManager.MarkSceneDirty(go.scene);
         EditorSceneManager.SaveScene(go.scene);
